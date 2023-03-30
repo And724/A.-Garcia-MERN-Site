@@ -1,0 +1,68 @@
+
+### CREATE 1
+POST http://localhost:8000/log HTTP/1.1
+content-type: application/json
+
+{
+    "deckName": "Eternal Sunshine Of The Spotless Mind",
+    "commanderName": "Skrelv",
+    "deckColors": "White",
+    "numberOfLands": 36,
+    "dateCompleted": "2023-03-08"
+}
+
+
+### CREATE 2
+POST http://localhost:8000/log HTTP/1.1
+content-type: application/json
+
+{
+    "deckName": "Sac All",
+    "commanderName": "Ghave, Guru of Spores",
+    "deckColors": "Black, White, Green",
+    "numberOfLands": 40,
+    "dateCompleted": "2023-03-12"
+}
+
+
+
+### CREATE 3
+POST http://localhost:8000/log HTTP/1.1
+content-type: application/json
+
+{
+    "deckName": "Mono Black Control",
+    "commanderName": "K'rrik, Son of Yawgmoth",
+    "deckColors": "Black",
+    "numberOfLands": 36,
+    "dateCompleted": "2023-03-16"
+}
+
+### RETRIEVE all documents.
+GET http://localhost:8000/log HTTP/1.1
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:8000/log/6413e2418d92a33f6f3bcd3f HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the id in the following request with one that exists
+### and update the title, year, and/or language:
+PUT http://localhost:8000/log/6413e2418d92a33f6f3bcd3f HTTP/1.1
+content-type: application/json
+
+{
+    "deckName": "Group Slug",
+    "commanderName": "Mogis, God of Slaughter",
+    "deckColors": "Black, Red",
+    "numberOfLands": 38,
+    "dateCompleted": "2023-03-19"
+}
+
+### DELETE by ID (no response provided)
+DELETE http://localhost:8000/log/6413e2418d92a33f6f3bcd3f HTTP/1.1
+
+
+
+
