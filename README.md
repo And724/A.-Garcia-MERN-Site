@@ -1,3 +1,13 @@
+# Fullstack MERN Site
+This project is the culmination of the technologies learned in my Web Development course. On the website there is a Single Page Application (SPA) that is taking advantage of MongoDB, Express, React v18, Node, JavaScript, and conforms to REST design principles. The other pages of the website take advantage of some of these technologies in addition to HTML and CSS. The SPA on the website logs data in a table that a user can interact with and that page interacts with MongoDB. 
+
+# Usage
+Clone this repository to your computer and ensure you have a way to connect with a database via MongoDB. I achieved this by using MongoDB Atlas and using their free option to create a cluster. Once that is done, I added my MongoDB account username and password to the backend folder's .env file. Connecting to MongoDB is necessary for the SPA to function properly. Download the needed dependencies. Once setup, right click on the frontend folder in your IDE and open in integrated terminal. In the terminal, type `npm start`. Do the same for the backend folder in your IDE. Now you can fully interact with the site!
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
